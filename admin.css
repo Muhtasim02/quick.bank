@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+  background: #fff0f0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+h2 {
+  text-align: center;
+  color: #c40000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #c40000;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #c40000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}

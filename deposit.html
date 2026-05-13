@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit</title>
+  <link rel="stylesheet" href="deposit.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Deposit Money</h2>
+
+  <!-- METHOD SELECT -->
+  <select id="method" onchange="showForm()">
+    <option value="">Select Method</option>
+    <option value="card">Card</option>
+    <option value="bank">Bank</option>
+    <option value="bkash">bKash</option>
+  </select>
+
+  <!-- CARD FORM -->
+  <div id="cardForm" class="form">
+    <input type="text" id="cardNumber" placeholder="Card Number">
+    <input type="password" id="cardPass" placeholder="Card Password">
+    <input type="number" id="cardAmount" placeholder="Amount">
+    <button onclick="deposit('card')">Deposit</button>
+  </div>
+
+  <!-- BANK FORM -->
+  <div id="bankForm" class="form">
+    <input type="text" id="bankAccount" placeholder="Account Number">
+    <input type="password" id="bankPass" placeholder="Password">
+    <input type="number" id="bankAmount" placeholder="Amount">
+    <button onclick="deposit('bank')">Deposit</button>
+  </div>
+
+  <!-- BKASH FORM -->
+  <div id="bkashForm" class="form">
+    <input type="text" id="bkashNumber" placeholder="bKash Number">
+    <input type="number" id="bkashAmount" placeholder="Amount">
+    <button onclick="deposit('bkash')">Deposit</button>
+  </div>
+
+</div>
+
+<script src="deposit.js"></script>
+
+</body>
+</html>

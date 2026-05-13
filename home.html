@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Bank - Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- 🔔 ROUND NOTIFICATION BUTTON -->
+  <button class="notif-btn" onclick="openNotifications()">
+    🔔
+  </button>
+
+  <h2>Welcome, <span id="holderName"></span></h2>
+
+  <div class="card">
+    <h3>Account Balance</h3>
+    <h1>$<span id="balance">0</span></h1>
+  </div>
+
+  <div class="buttons">
+    <button onclick="goDeposit()">Deposit</button>
+    <button onclick="goWithdraw()">Withdraw</button>
+    <button onclick="goEdit()">Edit Profile</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>

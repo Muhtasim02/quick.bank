@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdraw</title>
+  <link rel="stylesheet" href="withdraw.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Withdraw Money</h2>
+
+  <input type="password" id="pass" placeholder="Enter Account Password">
+
+  <select id="method" onchange="showForm()">
+    <option value="">Select Method</option>
+    <option value="interbank">Interbank</option>
+    <option value="bkash">bKash</option>
+    <option value="card">Card</option>
+  </select>
+
+  <!-- INTERBANK -->
+  <div id="interbank" class="form">
+    <input type="email" id="toEmail" placeholder="Receiver Email">
+    <input type="number" id="ibAmount" placeholder="Amount">
+    <button onclick="withdraw('interbank')">Send</button>
+  </div>
+
+  <!-- BKASH -->
+  <div id="bkash" class="form">
+    <input type="text" id="bkashNumber" placeholder="bKash Number">
+    <input type="number" id="bkashAmount" placeholder="Amount">
+    <button onclick="withdraw('bkash')">Send</button>
+  </div>
+
+  <!-- CARD -->
+  <div id="card" class="form">
+    <input type="text" id="cardNumber" placeholder="Card Number">
+    <input type="number" id="cardAmount" placeholder="Amount">
+    <button onclick="withdraw('card')">Send</button>
+  </div>
+
+</div>
+
+<script src="withdraw.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #ffffff, #ffd6d6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+h2 {
+  color: #c40000;
+}
+
+.card {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.card h1 {
+  color: #c40000;
+}
+
+/* BUTTONS */
+.buttons button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  background: #c40000;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔔 NOTIFICATION BUTTON */
+.notif-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #c40000;
+  color: white;
+  font-size: 20px;
+
+  cursor: pointer;
+}
